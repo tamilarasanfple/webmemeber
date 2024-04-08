@@ -12,7 +12,7 @@ services:
       - "local.member.siam66.com:host-gateway"
     working_dir: /app/web
     volumes:
-      - ./template_asia_fe/web:/app/web
+      - ./template_asia_fe/admin:/app/web
       - /app/web/node_modules # Adding this line to persist node_modules
     command: sh -c "npm install && npm run deploy"
     environment:
